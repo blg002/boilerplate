@@ -1,0 +1,33 @@
+/* humanstxt.org */
+
+/* TEAM */
+	Publisher: My Company Name
+	Contact: myco.com/contact
+	Site: myco.com
+	Twitter: @myco
+	Location: Philadelphia, PA
+
+	Front-End Developer: Richard Beckler
+	Contact: rbeckler@gmail.com
+	Site: rbeckler
+	Twitter: @rbeckler
+	Location: Philadelphia, PA
+
+	Designer: 
+	Contact: 
+	Site: 
+	Twitter: 
+	Location: 
+
+	Project Manager: 
+	Contact: 
+	Site: 
+	Twitter: 
+	Location: 
+
+/* SITE */
+	Created: 2011/01
+	Language: English U.S.
+	Standards: HTML5 (Class Names), CSS3
+	Components: jQuery
+	Software: ExpressionEngine 2

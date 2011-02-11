@@ -1,0 +1,19 @@
+User-agent: *
+
+# robotstxt.org
+# google.com/support/webmasters/bin/answer.py?hl=en&answer=156449
+
+Sitemap: http://www.company.org/sitemap.xml
+Disallow: /projects/
+Disallow: /scripts/
+Disallow: /stylesheets/
+Disallow: /fw/
+
+# EE
+# capelinks.com/blog/fighting-member-registration-spam-expressionengine
+# markinns.com/articles/full/tidy_up_ee_urls
+Disallow: /member/
+Disallow: /forums/member/
+Disallow: /member/register/
+Disallow: /forums/member/register/
+Disallow: /index.php/
