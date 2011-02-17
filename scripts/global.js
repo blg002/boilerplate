@@ -21,7 +21,7 @@ var COMPANYNAMESPACE = COMPANYNAMESPACE || {
 		init : function(){
 			console.log('only on the body#about pages');
 		}
-	};
+	},
 	
 // Initialize Feature Plugin	
 	initFeature : function(){
