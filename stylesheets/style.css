@@ -56,7 +56,7 @@ a:hover, a:active, a:focus { text-decoration:none; }
 ------------------------------------ */
 #banner  { }
 #logo a { display:block; }
-input[type=search] { -webkit-appearance:none; }
+input[type=search] { -webkit-appearance:textfield; -webkit-box-sizing:content-box; }
 input[type=search]::-webkit-search-decoration { display:none; }
 
 /* =Main Nav */
