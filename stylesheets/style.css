@@ -109,6 +109,7 @@ input[type=search]::-webkit-search-decoration { display:none; }
 #panels { width:900px; height:250px; overflow:hidden; }
 .js #panel-wrap, .js #panels { overflow:hidden; }
 #panels .article { width:900px; height:250px; background-position:6px 5px; background-repeat:no-repeat; }
+.js #panels .article { display:none; }
 
 /* nav - feature */
 
