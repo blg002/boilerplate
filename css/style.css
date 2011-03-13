@@ -71,8 +71,8 @@ input[type=search]::-webkit-search-decoration { display:none; }
 
 /* =Main */
 #main  { }
-#main h1 { font:bold 24px/1 arial,"helvetica neue",helvetica,sans-serif; }
-#main h2 { font:bold 18px/1 arial,"helvetica neue",helvetica,sans-serif; }
+#main h1 { font:bold 24px/1 'helvetica neue',arial,sans-serif; }
+#main h2 { font:bold 18px/1 'helvetica neue',arial,sans-serif; }
 #main h3 { font-weight:bold; }
 #main h4 { font-weight:bold; }
 #main h5 { font-weight:bold; font-style:italic; }
@@ -83,7 +83,7 @@ input[type=search]::-webkit-search-decoration { display:none; }
 #main ol { list-style:decimal outside; margin-left:1.8em; }
 #main dt, #main dfn { font-weight:bold; }
 #main dd { margin-left:15px; }
-#main blockquote p { margin:0; padding:0 18px; font-style:italic; background:url(/images/template/q.png) 10px 0 no-repeat; color:rgb(100,100,100); }
+#main blockquote p { margin:0; padding:0 18px; font-style:italic; background:url(/img/template/q.png) 10px 0 no-repeat; color:rgb(100,100,100); }
 #main cite { text-transform:uppercase; letter-spacing:0.2px; font-size:11px; }
 #main blockquote + p cite { padding-left:18px; color:rgb(100,100,100); }
 #main blockquote + p cite:before { content:'\2014'; }
@@ -116,10 +116,10 @@ input[type=search]::-webkit-search-decoration { display:none; }
 /* currents - feature */
 
 /* panels - feature */
-#panel-1 { background-image:url(/images/feature/panel-1.png); }
-#panel-2 { background-image:url(/images/feature/panel-2.png); }
-#panel-3 { background-image:url(/images/feature/panel-3.png); }
-#panel-4 { background-image:url(/images/feature/panel-4.png); }
+#panel-1 { background-image:url(/img/feature/panel-1.png); }
+#panel-2 { background-image:url(/img/feature/panel-2.png); }
+#panel-3 { background-image:url(/img/feature/panel-3.png); }
+#panel-4 { background-image:url(/img/feature/panel-4.png); }
 
 
 /*	=Forms
