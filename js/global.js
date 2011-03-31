@@ -46,18 +46,27 @@ var COMPANYNAMESPACE = COMPANYNAMESPACE || {
 			isPlaceholder = ("placeholder" in i);
 
 		if (!isPlaceholder) {
-			$('input.placeholder').each(function(){
+			$('input[placeholder]').each(function(){
 				var $this = $(this),
 					fieldLabel = $this.attr('placeholder');
 
 				$this.val(fieldLabel).focus(function(){
 					if (this.value == fieldLabel){
 						$this.val('');
-					};
+					}
 				}).blur(function(){
 					if (this.value == ''){
 						$this.val(fieldLabel);
-					};
+					}
+				});
+			});
+			$('form').submit(function(){
+				$('input[placeholder]').each(function(){
+					var $this = $(this);
+
+					if ($this.attr('placeholder') == $this.val()){
+						$this.val('');
+					}
 				});
 			});
 		}
