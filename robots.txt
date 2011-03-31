@@ -5,8 +5,8 @@ User-agent: *
 
 Sitemap: http://www.company.org/sitemap.xml
 Disallow: /projects/
-Disallow: /scripts/
-Disallow: /stylesheets/
+Disallow: /js/
+Disallow: /css/
 Disallow: /fw/
 
 # EE
