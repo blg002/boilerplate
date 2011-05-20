@@ -11,7 +11,7 @@ body { font-size:12px; line-height:18px; width:6in !important; margin:0 auto !im
 a:link, a:visited { color:#520 !important; background:transparent; font-weight:bold; text-decoration:underline; }
 #main a[href]:after, #footer a[href]:after { content:" (" attr(href) ") "; font-size:90%; }
 #main a[href^="/"]:after, #footer a[href^="/"]:after { content:" (http://www.company.org" attr(href) ") "; font-size:90%; }
-a[href^="javascript:"]:after, a[href^="#"]:after, .ir a:after { content: ""; }
+a[href^="javascript:"]:after, a[href^="#"]:after, #breadcrumbs a:after { content: ""!important; }
 abbr:after { content:" (" attr(title) ")"; }
 
 h1 { font:italic bold 16px/1em Georgia, serif; color:black; margin-bottom:2px; border-top:2.5px solid #000; border-bottom:1px solid #000; padding:2px; }
