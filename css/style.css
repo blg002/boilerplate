@@ -106,8 +106,8 @@ input[type="search"]::-webkit-search-decoration { display:none; }
 #feature { width:900px; height:250px; position:relative; z-index:50; }
 #panel-wrap { width:900px; height:250px; overflow:hidden; }
 #panels { width:900px; height:250px; overflow:hidden; }
-.js #panel-wrap, .js #panels { overflow:hidden; }
 #panels .article { width:900px; height:250px; background-position:0 0; background-repeat:no-repeat; }
+.js #panel-wrap, .js #panels { overflow:hidden; }
 .js #panels .article { display:none; }
 
 /* nav - feature */

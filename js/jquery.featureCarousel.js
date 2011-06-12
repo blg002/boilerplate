@@ -1,12 +1,15 @@
 (function() {
 	$.fn.featureCarousel = function(){
 		return this.each(function(){
-			var $container = $('> div', this).css('overflow','hidden'),
-				$wrap = $container.find('> div').css('overflow','hidden'),
+			var $this = $(this),
+				$container = $('> div', this),
+				$wrap = $container.find('> div'),
 				$panels = $wrap.find('> div'),
+				$directNav = $('#feature-nav-direct'),
+				$directNavLink = $directNav.find('a'),
 				
 				singleWidth = $container.outerWidth(),
-				panels = $panels.length;
+				panels = $panels.length,
 				animateSpeed = 500,
 				currentPanel = 1,
 				clickCount = 0;
@@ -35,7 +38,29 @@
 					}
 					currentPanel = panel
 				});
+				
+				var cur = panel-1 >= panels ? 0 : panel-1;
+				$directNav.find('a').removeClass('current').end().find('li').eq(cur).find('a').addClass('current');
 			}
+			
+			// Direct Links
+			$directNavLink.click(function(){
+				var index = $directNavLink.index(this);
+				gotoPanel(index+1);
+
+				if (clickCount != 0){
+					clearInterval(rotator);
+				}
+
+				clickCount++;
+				return false;
+			}).eq(rand).click();
+			
+	        $(this).bind('goto',function (event, panel) {
+	            gotoPanel(panel);
+	        });
+			
+			$('li:first a',$directNav).addClass('current');
 			
 			$container.prepend('<ol id="feature-nav" class="nav"><li id="feature-prev"><a href="#" title="View the previous panel">Previous</a></li><li id="feature-next"><a href="#" title="View the next panel">Next</a></li></ol>');
 			
