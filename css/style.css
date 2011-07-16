@@ -13,9 +13,10 @@ abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
 table { border-collapse:collapse; border-spacing:0; }
 hr { display:block; height:1px;border:0; border-top:1px solid #ccc; margin:1em 0;padding:0; }
 textarea { overflow:auto; }
+img { vertical-align:middle; }
 /*fonts*/
 pre,code,kbd,samp { font-family:monospace,sans-serif; }
-body,select,input,textarea { color:rgb(68,68,68); }
+body,select,input,textarea { color:rgb(51,51,51); }
 /*generics*/
 cite { font-style:normal; }
 abbr { border:none; letter-spacing:0.1px; }
@@ -35,11 +36,11 @@ td { vertical-align:top; }
 ::-moz-selection { background-color:rgb(254,87,161); color:rgb(255,255,255); text-shadow:none; }
 ::selection { background-color:rgb(254,87,161); color:rgb(255,255,255); text-shadow:none; }
 
-html { background-color:rgb(219,219,219); overflow-y:scroll; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
+html { background-color:rgb(219,219,219); overflow-y:scroll; -webkit-tap-highlight-color:rgba(0,0,0,0); -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
 body { 
 	font:100%/1 'helvetica neue',arial,sans-serif;
 	color:rgb(51,51,51);
-	width:960px; margin:0 auto 36px; background-color:rgb(255,255,255); }
+	margin:0 auto 36px; width:960px; background-color:rgb(255,255,255); }
 
 /*	=Links
 ------------------------------------ */
@@ -55,7 +56,8 @@ a:hover, a:active, a:focus { text-decoration:none; }
 ------------------------------------ */
 #banner  { }
 #logo a { display:block; }
-input[type="search"] { -webkit-appearance:textfield; -webkit-box-sizing:content-box; }
+#logo img { display:block; }
+input[type="search"] { -webkit-appearance:textfield; -moz-box-sizing:content-box; -webkit-box-sizing:content-box; box-sizing:content-box; }
 input[type="search"]::-webkit-search-decoration { display:none; }
 
 /* =Main Nav */
@@ -82,7 +84,7 @@ input[type="search"]::-webkit-search-decoration { display:none; }
 #main ol { list-style:decimal outside; margin-left:1.8em; }
 #main dt, #main dfn { font-weight:bold; }
 #main dd { margin-left:15px; }
-#main blockquote p { margin:0; padding:0 18px; font-style:italic; background:url(/img/template/q.png) 10px 0 no-repeat; color:rgb(100,100,100); }
+#main blockquote p { margin:0; padding:0 18px; font-style:italic; color:rgb(100,100,100); }
 #main cite { text-transform:uppercase; letter-spacing:0.2px; font-size:11px; }
 #main blockquote + p cite { padding-left:18px; color:rgb(100,100,100); }
 #main blockquote + p cite:before { content:'\2014'; }
@@ -94,7 +96,7 @@ input[type="search"]::-webkit-search-decoration { display:none; }
 #main .figcaption { font-size:11px; color:rgb(64,64,64); background-color:rgb(229,236,242); padding:4px 8px; margin:0; }
 
 /* =Complementary */
-#complementary  { }
+#complementary { }
 
 /*	=Contentinfo
 ------------------------------------ */
@@ -126,15 +128,17 @@ input[type="search"]::-webkit-search-decoration { display:none; }
 input {  }
 label[for] { display:block; }
 label, input[type="button"], input[type="submit"], input[type="image"], button { cursor:pointer; }
-button, input, select, textarea { width:auto; overflow:visible; margin:0; }
+input[type="button"], input[type="submit"], input[type="image"], button { -webkit-appearance:button; }
+button, input, select, textarea { margin:0; padding:0; width:auto; overflow:visible; }
 input::-moz-focus-inner, button::-moz-focus-inner { border:0; padding:0; }
-.butt input { width:auto; }
+.btn input { width:auto; }
 .hidden-fields { position:absolute; left:-9999px; top:-9999px; }
 button, input, select, textarea { margin:0; width:auto; font-size:100%; font-family:sans-serif; overflow:visible; vertical-align:baseline; }
 textarea { overflow:auto; vertical-align:text-top; }
+button::-moz-focus-inner, input::-moz-focus-inner { border:0; padding:0; }
 /* line things up */
-input[type="radio"] { vertical-align:text-bottom; }
-input[type="checkbox"] { vertical-align:bottom; }
+input[type="radio"] { vertical-align:text-bottom; box-sizing:border-box; }
+input[type="checkbox"] { vertical-align:bottom; box-sizing:border-box; }
 .ie7 input[type="checkbox"] { vertical-align:baseline; }
 /* nice button */
 div[role="main"] button,
@@ -144,7 +148,7 @@ div[role="main"] input[type="button"] { -webkit-appearance:none; -moz-border-rad
 .ie7 div[role="main"] button,
 .ie7 div[role="main"] input[type="reset"],
 .ie7 div[role="main"] input[type="submit"],
-.ie7 div[role="main"] input[type="button"] { padding-top:2px; padding-bottom:0px; }
+.ie7 div[role="main"] input[type="button"] { padding-top:2px; padding-bottom:0; }
 .ie7 div[role="main"] button { padding-top:1px; padding-bottom:1px; }
 
 /*	=Tables
